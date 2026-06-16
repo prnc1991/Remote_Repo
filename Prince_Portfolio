@@ -1,0 +1,536 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Kumar | Cloud Architect & DevOps Leader</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#3b82f6;
+--secondary:#60a5fa;
+--accent:#06b6d4;
+--bg:#050816;
+--card:rgba(255,255,255,0.06);
+--border:rgba(255,255,255,0.1);
+--text:#ffffff;
+--muted:#94a3b8;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:600px;
+height:600px;
+background:radial-gradient(circle,var(--primary),transparent 70%);
+top:-250px;
+right:-200px;
+opacity:.15;
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:radial-gradient(circle,var(--accent),transparent 70%);
+bottom:-250px;
+left:-200px;
+opacity:.12;
+z-index:-1;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+section{
+padding:90px 0;
+}
+
+.glass{
+background:var(--card);
+backdrop-filter:blur(14px);
+border:1px solid var(--border);
+border-radius:20px;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:10px 20px;
+border:1px solid rgba(96,165,250,.3);
+border-radius:50px;
+background:rgba(59,130,246,.12);
+color:#93c5fd;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:1.5rem;
+font-weight:500;
+color:#93c5fd;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+color:var(--muted);
+font-size:1.1rem;
+}
+
+.buttons{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 30px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-primary{
+background:linear-gradient(135deg,#2563eb,#06b6d4);
+color:white;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-outline{
+border:1px solid #3b82f6;
+color:white;
+}
+
+.btn-outline:hover{
+background:#3b82f6;
+}
+
+.stats{
+margin-top:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.stat-card{
+padding:25px;
+text-align:center;
+}
+
+.stat-card h3{
+font-size:2.3rem;
+color:#60a5fa;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:60px;
+font-weight:700;
+}
+
+.about{
+padding:40px;
+}
+
+.about p{
+color:var(--muted);
+line-height:1.8;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+padding:20px;
+text-align:center;
+font-weight:600;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-8px);
+border-color:#3b82f6;
+}
+
+.timeline{
+position:relative;
+max-width:900px;
+margin:auto;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:20px;
+top:0;
+width:4px;
+height:100%;
+background:#2563eb;
+}
+
+.timeline-item{
+position:relative;
+padding-left:70px;
+margin-bottom:40px;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:10px;
+top:10px;
+width:24px;
+height:24px;
+background:#60a5fa;
+border-radius:50%;
+}
+
+.timeline-card{
+padding:25px;
+}
+
+.timeline-card h3{
+color:#60a5fa;
+margin-bottom:8px;
+}
+
+.certifications{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.cert{
+padding:25px;
+text-align:center;
+}
+
+.contact{
+text-align:center;
+padding:50px;
+}
+
+.contact p{
+margin:10px 0;
+color:var(--muted);
+}
+
+.footer{
+padding:30px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+color:var(--muted);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.hero h2{
+font-size:1.1rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+.timeline-item{
+padding-left:60px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="container">
+
+<div class="badge">
+☁ Azure | AWS | VMware | DevOps
+</div>
+
+<h1>Prince Kumar</h1>
+
+<h2>
+Cloud Infrastructure Architect &
+DevOps Transformation Leader
+</h2>
+
+<p>
+13+ Years of Experience Delivering Enterprise Cloud Transformation,
+Infrastructure Modernization, VMware Solutions, Azure & AWS Cloud
+Deployments, DevOps Automation and IT Program Management.
+</p>
+
+<div class="buttons">
+<a href="#" class="btn btn-primary">Download Resume</a>
+<a href="#contact" class="btn btn-outline">Contact Me</a>
+</div>
+
+<div class="stats">
+
+<div class="glass stat-card">
+<h3>13+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="glass stat-card">
+<h3>30+</h3>
+<p>Projects Delivered</p>
+</div>
+
+<div class="glass stat-card">
+<h3>90+</h3>
+<p>Amazon Sites Managed</p>
+</div>
+
+<div class="glass stat-card">
+<h3>99.9%</h3>
+<p>Infrastructure Availability</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="glass about">
+<p>
+Results-driven Cloud and Infrastructure Professional with expertise
+in Azure, AWS, VMware, DevOps, Enterprise IT Operations, Datacenter
+Management, Infrastructure Automation, CI/CD Pipelines and Project
+Delivery. Successfully led cloud migration and transformation
+initiatives across enterprise environments while maintaining
+high availability and operational excellence.
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Technology Stack</h2>
+
+<div class="skills-grid">
+
+<div class="glass skill">☁ Microsoft Azure</div>
+<div class="glass skill">☁ Amazon AWS</div>
+<div class="glass skill">⚙ Azure DevOps</div>
+<div class="glass skill">🔧 Terraform</div>
+<div class="glass skill">🚀 Jenkins</div>
+<div class="glass skill">🐳 Docker</div>
+<div class="glass skill">☸ Kubernetes</div>
+<div class="glass skill">🖥 VMware ESXi</div>
+<div class="glass skill">📡 VMware vCenter</div>
+<div class="glass skill">🪟 Windows Server</div>
+<div class="glass skill">🔄 Hyper-V</div>
+<div class="glass skill">📊 Zabbix</div>
+<div class="glass skill">🌿 Git</div>
+<div class="glass skill">☁ Cloud Migration</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Key Achievements</h2>
+
+<div class="stats">
+
+<div class="glass stat-card">
+<h3>70%</h3>
+<p>Deployment Effort Reduced</p>
+</div>
+
+<div class="glass stat-card">
+<h3>500+</h3>
+<p>Windows 11 Migrations</p>
+</div>
+
+<div class="glass stat-card">
+<h3>30+</h3>
+<p>Projects Delivered</p>
+</div>
+
+<div class="glass stat-card">
+<h3>90+</h3>
+<p>Amazon Locations Managed</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Professional Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="glass timeline-card">
+<h3>NTT DATA</h3>
+<p><strong>IT Operations Specialist</strong></p>
+<p>2025 - Present</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="glass timeline-card">
+<h3>Atos</h3>
+<p><strong>IT Program Manager</strong></p>
+<p>2023 - 2024</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="glass timeline-card">
+<h3>Amazon India</h3>
+<p><strong>IT Operation Delivery & Project Manager</strong></p>
+<p>2020 - 2022</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="glass timeline-card">
+<h3>SST Infotech</h3>
+<p><strong>Manager IT Cloud</strong></p>
+<p>2019 - 2020</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="certifications">
+
+<div class="glass cert">
+AZ-104 Azure Administrator
+</div>
+
+<div class="glass cert">
+Azure Solutions Architect
+</div>
+
+<div class="glass cert">
+CCNA
+</div>
+
+<div class="glass cert">
+PRINCE2 Foundation & Practitioner
+</div>
+
+<div class="glass cert">
+VMware Foundation
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="glass contact">
+
+<p>📧 Email: prnc1991@gmail.com</p>
+
+<p>📍 Noida, Uttar Pradesh, India</p>
+
+<p>🔗 LinkedIn: linkedin.com/in/prnc1991</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+© 2026 Prince Kumar | Cloud Architect & DevOps Portfolio
+</footer>
+
+</body>
+</html>
+```
